@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "162543490648",
+    "firebase_url": "https://messanger-c6d9c-default-rtdb.firebaseio.com",
+    "project_id": "messanger-c6d9c",
+    "storage_bucket": "messanger-c6d9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162543490648:android:983136abdbe1765d755c2d",
+        "android_client_info": {
+          "package_name": "ru.markn.messenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuXfDbUiIJRQlU62Z2RVueolm9sthvF48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

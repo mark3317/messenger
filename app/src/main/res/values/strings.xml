@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="title_messenger">Messenger</string>
+    <string name="hint_your_email">Your email:</string>
+    <string name="hint_your_password">Your password:</string>
+    <string name="button_login">Login</string>
+    <string name="tv_forgot_password">Forgot password</string>
+    <string name="tv_register">Register</string>
+    <string name="title_registration">Registration</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_age">Age</string>
+    <string name="button_sing_up">Sing Up</string>
+    <string name="hint_password">Password</string>
+    <string name="title_forgot_password">Forgot password?</string>
+    <string name="btn_reset_password">Reset password</string>
+    <string name="item_logout">Logout</string>
+    <string name="reset_link_sent">The reset link has been successfully sent</string>
+    <string name="hint_type_your_message">Type your message</string>
+    <string name="description_send">Send</string>
+</resources>

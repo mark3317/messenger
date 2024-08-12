@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral90"
+    tools:context=".ChatActivity">
+
+    <TextView
+        android:id="@+id/tvTitleChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="John Smith, 26" />
+
+    <View
+        android:id="@+id/viewOnlineStatus"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitleChat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTitleChat"
+        tools:background="@drawable/circle_green" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/etMessage"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleChat"
+        tools:itemCount="4"
+        tools:listitem="@layout/my_message_item" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:hint="@string/hint_type_your_message"
+        android:inputType="textMultiLine"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long "/>
+
+    <ImageView
+        android:id="@+id/ivSendMessage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/description_send"
+        app:layout_constraintBottom_toBottomOf="@+id/etMessage"
+        app:layout_constraintEnd_toEndOf="@+id/etMessage"
+        app:layout_constraintTop_toTopOf="@+id/etMessage"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        app:tint="@android:color/holo_green_light" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
